@@ -1,3 +1,10 @@
+---
+layout: page
+title: real_estate_cleaning
+permalink: /real_estate_cleaning/
+---
+
+
 ```python
 import pandas as pd
 import numpy as np
