@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: real_estate_cleaning
 permalink: /real_estate_cleaning/
 ---
@@ -1514,3 +1514,5 @@ df1[df1["SqFt"]>8000]
 ```python
 
 ```
+
+[back](./)
