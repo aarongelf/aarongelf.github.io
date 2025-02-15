@@ -30,6 +30,37 @@ Key guiding questions include:
 
 Our main data was initially scraped from [Bōde Canada Inc](https://bode.ca/sold-data?province=AB&city=Calgary&transactionDate=2%20years), an online real estate platform, with real estate data ranging from August 2024, to March 2025. To determine specific neighborhood information and coordinate data, we merged our data with datasets from Open Calgary that provided information on [Calgary neighborhoods](https://data.calgary.ca/Base-Maps/Community-Boundaries/ab7m-fwn6) and [Calgary coordinates](https://data.calgary.ca/Base-Maps/Parcel-Address-and-lat-long/s8b3-j88p/about_data).
 
+Our initial dataset contained the following key attributes:
+
+- `Address`: The property location
+- `Transactions`: The number of sales per listing
+- `Year/Month`: Date of the sale
+- `List Price`: The asking price in Candian dollars (CAD)
+- `Sold Price`: The final sale price (CAD)
+- `Sold/List Ratio`: The ratio of sale price to asking price, useful for determining market competitiveness
+- `Property type`: Whether the property was a house, duplex, apartment, etc.
+- `SqFt`: The square footage of the house
+- `Beds`: The number of beds in the house
+- `Baths`: The number of baths in the house
+
+## Data Preprocessing
+
+To ensure our dataset was clean and suitable for analysis, several preprocessing steps were taken, through the use of several python packages such as `pandas`, `numpy`, `geopandas`, and `shapely`.
+
+### Data Cleaning
+
+The `List Price` and `Sold Price` columns both contained dollar signs and commas, both of which were removed to allow for numeric operations.  Following this, we made sure to convert both columns to floating-point numbers so they could missing values properly.  We also found that the `Sold/List Ratio` column had percentage signs, which were removed, followed by converting the values to decimal format for easier calculations.  Next, we found that the `SqFt` column contained comma-separated values, which were cleaned and then converted to a numeric format. Finally, the `Address` column had trailing spaces which we made sure to strip to allow for consistent text-based operations.
+
+### Handling Missing and Erroneous Values
+
+We began by identifying and removing missing values to maintain data integrity.  Following this, entries with a `SqFt` value of zero were removed. These entries likely represented land purchases intended for development. They are not comparable to residential properties in terms of size or price, so we felt it best to exclude them.  Lastly, outliers were identified and corrected. One example, was a property with an extremely large `Sold/List Ratio` of 18, most likely due to a data entry mistake.  Upon inspection we found a 5,800 sqft house was asking for $500,000, but sold for $9,000,000, suggesting an additional 0 was added to the `Sold Price`.
+
+### Integration of Geospatial Data
+
+
+
+
+
 
 
 > This is a blockquote following a header.
