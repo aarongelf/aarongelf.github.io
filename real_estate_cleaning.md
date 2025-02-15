@@ -1,7 +1,12 @@
 ---
-layout: default
-title: real_estate_cleaning
+layout: post
+title: Calgary Real Estate Trends: Pricing, Sales, and Market Insights
 permalink: /real_estate_cleaning/
+date: 2025-02-15
+author: Aaron Gelfand
+categories: Data-Science
+published: true
+excerpt: Thinking of buying a home in Calgary? This daata story dives into real estate trends, analyzing pricing, sales pattern, and market competitiveness. From price per square foot to seasonal fluctuations, discover key insights to help first-time buyers and investors make informed decisions.
 ---
 
 
