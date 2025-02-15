@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Calgary Real Estate Trends: Pricing, Sales, and Market Insights
+title: "Calgary Real Estate Trends: Pricing, Sales, and Market Insights"
 permalink: /real_estate_cleaning/
 date: 2025-02-15
 author: Aaron Gelfand
