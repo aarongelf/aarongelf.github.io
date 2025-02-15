@@ -77,7 +77,9 @@ From our figure we see a positive relationship between home size and sold price,
 
 Different types of properties tend to have different price dynamics. For example, high-rise apartments often command higher prices per square foot compared to houses or duplexes due to factors such as location, amenities, and demand for urban living. By calculating the price per square foot for each property type, we aimed to identify which property types provide the best value relative to their size. This analysis helps buyers and investors make informed decisions based on the market trends for different property types.
 
-![png](/assets/images/avg_price_per_sqft.png)
+<img src="/assets/images/avg_price_per_sqft.png" alt="Average Price per Sqft" style="display: block; margin: auto; width: 80%; max-width: 800px;">
+
+
 
 A bar plot illustrating the average price per square foot by property type, highlighting how high-rise apartments and other urban properties tend to be priced higher per square foot than more suburban properties like houses and duplexes.
 
