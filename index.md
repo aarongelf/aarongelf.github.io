@@ -57,7 +57,11 @@ We began by identifying and removing missing values to maintain data integrity. 
 
 ### Integration of Geospatial Data
 
+To get a better idea of market competitiveness we incorporated coordinate data and neighbourhood boundries from our Open Calgary datasets.  We began by ensuring consistency of address formatting between our primary dataset and the other datsets by normalizing the addresses.  This normalizing function applied standardization rules by replacing abbreviations (e.g., "St" and "ST" to "Street", "Ave" and "AVE" to "Avenue"), while removing unnecessary punctuations or unit numbers.
 
+We then merged this cleaned coordinate data with our original dataset based on the normalized addresses, resulting in the addition of longitude, latitude, and location to our original dataset.  Unfortunately, this merge introduced some missing values, particularly for properties that had no coordinates available.  To address this, we removed rows with the missing coordinate data, ensuring that only records with complete geographical info were kept for our geospatial analysis.
+
+The 
 
 
 
