@@ -12,11 +12,25 @@ There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-# Header 1
+# Calgary Real Estate Trends: Pricing, Sales, and Market Insights
 
-Here is the text for my first things.
+Thinking of buying a home in Calgary? For many young professionals and recent graduates, homeownership represents a key financial milestone. However, navigating the real estate market in a large city like Calgary, requires understanding pricing trends, market competitiveness, and property value over time. Rising home prices, fluctuating mortgage rates, and shifting buyer demand all play a role in shaping housing affordability.
 
-## Header 2
+This analysis examines Calgary’s real estate market, focusing on property sales data to uncover trends in pricing, home size, and market competitiveness. By exploring factors like price per square foot, seasonal sales patterns, and neighborhood desirability, this study provides insights that can help first-time buyers and investors make informed decisions.
+
+Key guiding questions:
+
+- Are homes in Calgary selling above or below the listing price?
+- Which property types have the highest price per square foot?
+- What time of year sees the highest sale-to-list price ratios?
+- How does home size (square footage) impact final sale prices?
+- What neighborhoods have the most competitive real estate markets?
+
+## Our Dataset
+
+
+
+
 
 > This is a blockquote following a header.
 >
