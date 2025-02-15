@@ -18,7 +18,7 @@ Thinking of buying a home in Calgary? For many young professionals and recent gr
 
 This analysis examines Calgary’s real estate market, focusing on property sales data to uncover trends in pricing, home size, and market competitiveness. By exploring factors like price per square foot, seasonal sales patterns, and neighborhood desirability, this study provides insights that can help first-time buyers and investors make informed decisions.
 
-Key guiding questions:
+Key guiding questions include:
 
 - Are homes in Calgary selling above or below the listing price?
 - Which property types have the highest price per square foot?
@@ -28,7 +28,7 @@ Key guiding questions:
 
 ## Our Dataset
 
-
+Our main data was initially scraped from [Bōde Canada Inc](https://bode.ca/sold-data?province=AB&city=Calgary&transactionDate=2%20years), an online real estate platform, with real estate data ranging from August 2024, to March 2025. To determine specific neighborhood information and coordinate data, we merged our data with datasets from Open Calgary that provided information on [Calgary neighborhoods](https://data.calgary.ca/Base-Maps/Community-Boundaries/ab7m-fwn6) and [Calgary coordinates](https://data.calgary.ca/Base-Maps/Parcel-Address-and-lat-long/s8b3-j88p/about_data).
 
 
 
