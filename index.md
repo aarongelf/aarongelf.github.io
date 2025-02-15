@@ -75,19 +75,31 @@ From our figure we see a positive relationship between home size and sold price,
 
 ## Which property types have the highest price per square foot?
 
+Different types of properties tend to have different price dynamics. For example, high-rise apartments often command higher prices per square foot compared to houses or duplexes due to factors such as location, amenities, and demand for urban living. By calculating the price per square foot for each property type, we aimed to identify which property types provide the best value relative to their size. This analysis helps buyers and investors make informed decisions based on the market trends for different property types.
 
+![png](/assets/images/avg_price_per_sqft.png)
+
+A bar plot illustrating the average price per square foot by property type, highlighting how high-rise apartments and other urban properties tend to be priced higher per square foot than more suburban properties like houses and duplexes.
 
 ## Are homes in Calgary selling above or below the listing price?
 
+Understanding whether properties are generally selling above or below the listing price provides insight into the competitiveness of the market. A high Sold/List Ratio could indicate a seller’s market, where buyers are willing to pay more than the asking price, while a lower ratio could suggest a buyer’s market, where negotiations result in properties selling for less than the list price. By analyzing the Sold/List Ratio across transactions, we aimed to understand the dynamics of pricing and the general market trends in Calgary.
 
+![png](/assets/images/distribution_of_sold_list_ratio.png)
+
+A histogram showing the distribution of the Sold/List Ratio, with a break-even line (1.0) for reference. The distribution reveals that most properties are sold at or slightly above the listing price, indicating a generally competitive market where buyers are often willing to pay more than the list price.
 
 ## What time of year sees the highest sale-to-list price ratios?
 
+The real estate market is often influenced by seasonal trends. For instance, there may be more buyer activity in the spring and summer, and fewer properties might sell during the winter months due to colder weather and holidays. By examining how the Sold/List Ratio fluctuates over time, we aimed to identify whether the market behaves differently during specific months of the year. This insight is valuable for both buyers and sellers: for example, sellers might prefer to list their homes during peak months when competition and demand are higher, while buyers may find better deals in the off-season.
 
+![png](/assets/images/seasonal_trends.png)
 
+A line plot showing monthly average Sold/List Ratios, highlighting seasonal trends in property sales. We observed that properties were more likely to sell above the listing price during winter months (December to February), suggesting that demand might be higher during this time, despite fewer listings.
 
 ## What neighborhoods have the most competitive real estate markets?
 
+Real estate performance can vary greatly depending on the location within the city. By mapping the sales data geographically, we can see if certain neighborhoods consistently perform better in terms of sale prices or Sold/List Ratios. This is important for both potential buyers looking to invest in high-performing areas and sellers looking to maximize their returns. Additionally, this spatial analysis helps identify areas where the real estate market may be underperforming, offering opportunities for future investments or targeted marketing.
 
 <iframe src="/assets/calgary_real_estate_heatmap_plasma.html" width="100%" height="600"></iframe>
 
@@ -95,7 +107,7 @@ TEXT
 
 <iframe src="/assets/calgary_property_desirability.html" width="100%" height="600"></iframe>
 
-
+By merging the real estate data with geographical coordinates, we created an interactive map to visualize how different neighborhoods in Calgary perform in terms of sales prices and market dynamics. This map provides a spatial understanding of the real estate landscape, showing areas with higher and lower performance.
 
 > This is a blockquote following a header.
 >
