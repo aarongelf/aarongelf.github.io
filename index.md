@@ -20,10 +20,10 @@ This analysis examines Calgary’s real estate market, focusing on property sale
 
 Key guiding questions include:
 
-- Are homes in Calgary selling above or below the listing price?
-- Which property types have the highest price per square foot?
-- What time of year sees the highest sale-to-list price ratios?
 - How does home size (square footage) impact final sale prices?
+- Which property types have the highest price per square foot?
+- Are homes in Calgary selling above or below the listing price?
+- What time of year sees the highest sale-to-list price ratios?
 - What neighborhoods have the most competitive real estate markets?
 
 ## Our Dataset
@@ -61,7 +61,30 @@ To get a better idea of market competitiveness we incorporated coordinate data a
 
 We then merged this cleaned coordinate data with our original dataset based on the normalized addresses, resulting in the addition of longitude, latitude, and location to our original dataset.  Unfortunately, this merge introduced some missing values, particularly for properties that had no coordinates available.  To address this, we removed rows with the missing coordinate data, ensuring that only records with complete geographical info were kept for our geospatial analysis.
 
-The 
+Additionally, we enriched our dataset with neighbourhood names by integrating the neighbourhood Open Calgary dataset.  By converting the WKT representations of community boundaries into geometries using `shapely`, we were able to create a geodataframe that represented the Calgary community districts as multipolygons.  From this we were able to overlay neighbourhood information onto our real estae data, allowing for spatial analysis of property trends across different regions of Calgary.
+
+## How does home size impact final sale prices?
+
+One of the more important factors influencing a home's value is its size. We wanted to understand whether larger homes typically sell for higher prices and to what extent home size correlates with the final sale price. This is crucial for both buyers and sellers: buyers may want to know if the extra square footage justifies the higher price, and sellers might use this insight to price their properties competitively. A scatter plot was created to visualize this relationship, showing that larger homes tend to sell for higher prices. However, we also observed considerable variation, which could be due to factors such as property type, neighborhood, and market conditions.
+
+
+![png](/assets/images/relationship_between_home_size_and_sold_price.png)
+
+## Which property types have the highest price per square foot?
+
+
+
+## Are homes in Calgary selling above or below the listing price?
+
+
+
+## What time of year sees the highest sale-to-list price ratios?
+
+
+
+
+## What neighborhoods have the most competitive real estate markets?
+
 
 
 
