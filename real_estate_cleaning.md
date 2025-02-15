@@ -6,7 +6,7 @@ date: 2025-02-15
 author: Aaron Gelfand
 categories: Data-Science
 published: true
-excerpt: Thinking of buying a home in Calgary? This daata story dives into real estate trends, analyzing pricing, sales pattern, and market competitiveness. From price per square foot to seasonal fluctuations, discover key insights to help first-time buyers and investors make informed decisions.
+excerpt: Thinking of buying a home in Calgary? This data story dives into real estate trends, analyzing pricing, sales patterns, and market competitiveness. From price per square foot to seasonal fluctuations, discover key insights to help first-time buyers and investors make informed decisions.
 ---
 
 
