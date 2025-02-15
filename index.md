@@ -89,6 +89,8 @@ From our figure we see a positive relationship between home size and sold price,
 ## What neighborhoods have the most competitive real estate markets?
 
 
+<iframe src="/assets/calgary_real_estate_heatmap_plasma.html" width="100%" height="600"></iframe>
+
 
 <iframe src="/assets/calgary_property_desirability.html" width="100%" height="600"></iframe>
 
