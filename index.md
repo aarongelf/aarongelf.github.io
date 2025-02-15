@@ -65,10 +65,13 @@ Additionally, we enriched our dataset with neighbourhood names by integrating th
 
 ## How does home size impact final sale prices?
 
-One of the more important factors influencing a home's value is its size. We wanted to understand whether larger homes typically sell for higher prices and to what extent home size correlates with the final sale price. This is crucial for both buyers and sellers: buyers may want to know if the extra square footage justifies the higher price, and sellers might use this insight to price their properties competitively. A scatter plot was created to visualize this relationship, showing that larger homes tend to sell for higher prices. However, we also observed considerable variation, which could be due to factors such as property type, neighborhood, and market conditions.
+One of the more important factors influencing a home's value is its size. We wanted to understand whether larger homes typically sell for higher prices and to what extent home size correlates with the final sale price. This is crucial for both buyers and sellers: buyers may want to know if the extra square footage justifies the higher price, and sellers might use this insight to price their properties competitively. A scatter plot was created to visualize this relationship.
 
 
 ![png](/assets/images/relationship_between_home_size_and_sold_price.png)
+
+
+From our figure we see a positive relationship between home size and sold price, highlighting a key trend, that larger homes tend sell for higher prices.  This makes sense, as larger homes tend to have more rooms, better amenities, or additional spaces that are typically more appealing to a larger range of buyers therefore driving up their market value.  However, we do see some variation in our spread of data points, suggesting that other factors play a key role in determining the sold price besides house size.
 
 ## Which property types have the highest price per square foot?
 
@@ -87,6 +90,7 @@ One of the more important factors influencing a home's value is its size. We wan
 
 
 
+<iframe src="/assets/calgary_property_desirability.html" width="100%" height="600"></iframe>
 
 
 
