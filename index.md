@@ -85,7 +85,7 @@ One of the more important factors influencing a home's value is its size. We wan
   <img src="/assets/images/relationship_between_home_size_and_sold_price.png">
 </p>
 
-From our figure we see a positive relationship between home size and sold price, highlighting a key trend, that larger homes tend sell for higher prices.  This makes sense, as larger homes tend to have more rooms, better amenities, or additional spaces that are typically more appealing to a larger range of buyers therefore driving up their market value.  To further support this figure, we determined the correlation between house size and sold price to be <b>0.81</b>, indicating a strong positive correlation.  This suggests that home size is a signifcant factor in determining the final sale. However, we do see some variation in our spread of data points, suggesting that other factors play a key role in determining the sold price besides house size.  
+From our figure we see a positive relationship between home size and sold price, highlighting a key trend, that larger homes tend sell for higher prices.  This makes sense, as larger homes tend to have more rooms, better amenities, or additional spaces that are typically more appealing to a larger range of buyers therefore driving up their market value.  To further support this figure, we determined the correlation between house size and sold price to be <strong>0.81</strong>, indicating a strong positive correlation.  This suggests that home size is a signifcant factor in determining the final sale. However, we do see some variation in our spread of data points, suggesting that other factors play a key role in determining the sold price besides house size.  
 
 ## Which property types have the highest price per square foot?
 
@@ -117,7 +117,7 @@ The real estate market is often influenced by seasonal trends. For instance, the
 
 Our line plot shows the monthly average Sold/List Ratios, highlighting seasonal trends in property sales. We observed that properties were more likely to have a higher sold/list ratio in the warmer months, making a steady decline during the colder months, and increasing again once the months began to warm up.  
 
-Additionally, we calculated the correlation between months and sold/list ratio to be <b>-0.13</b>, indicating a weak negative correlation.  This implies that while there is a trend of properties being more likely to sell closer to or below the listing price during the colder months, the relationship is not strong enough to fully explain the behavior of the market across months.
+Additionally, we calculated the correlation between months and sold/list ratio to be <strong>-0.13</strong>, indicating a weak negative correlation.  This implies that while there is a trend of properties being more likely to sell closer to or below the listing price during the colder months, the relationship is not strong enough to fully explain the behavior of the market across months.
 
 ## What neighborhoods have the most competitive real estate markets?
 
@@ -139,7 +139,7 @@ We aimed to train a classification model to predict whether a house is selling a
   <img src="/assets/images/roc_curve.png">
 </p>
 
-From the logistic regression model, we achieved an <b>accuracy of 96.3%</b>, with a <b>precision of 80.4%</b> and a <b>recall of 100%</b>. The <b>ROC AUC score of 0.978</b> indicates that the model is performing very well, distinguishing between competitive and non-competitive properties. 
+From the logistic regression model, we achieved an <strong>accuracy of 96.3%</strong>, with a <strong>precision of 80.4%</strong> and a <strong>recall of 100%</strong>. The <strong>ROC AUC score of 0.978</strong> indicates that the model is performing very well, distinguishing between competitive and non-competitive properties. 
 
 <p align="center"> 
   <img src="/assets/images/classification_confusion_matrix.png">
@@ -155,7 +155,7 @@ To predict the Sold/List Ratio of a house, we trained a linear regression model.
   <img src="/assets/images/regression_actual_vs_predicted.png"> 
 </p>
 
-Our linear regression model achieved an <strong>R<sup>2</sup> score of 0.461</strong>, indicating that approximately <b>46% of the variance</b> in the Sold/List Ratio can be explained by the model's features. The model's <b>Mean Squared Error (MSE) of 0.001 and Root Mean Squared Error (RMSE) of 0.022</b> suggest that the predictions are relatively accurate, but there is still room for improvement. The scatter plot of predicted versus actual Sold/List Ratios shows that the model is reasonably good at predicting the sold/list ratio, with some deviations indicating that other factors not included in the model may also influence the final sale-to-list price ratio.
+Our linear regression model achieved an <strong>R<sup>2</sup> score of 0.461</strong>, indicating that approximately <strong>46% of the variance</strong> in the Sold/List Ratio can be explained by the model's features. The model's <strong>Mean Squared Error (MSE) of 0.001 and Root Mean Squared Error (RMSE) of 0.022</strong> suggest that the predictions are relatively accurate, but there is still room for improvement. The scatter plot of predicted versus actual Sold/List Ratios shows that the model is reasonably good at predicting the sold/list ratio, with some deviations indicating that other factors not included in the model may also influence the final sale-to-list price ratio.
 
 
 
