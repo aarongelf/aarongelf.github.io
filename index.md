@@ -1,18 +1,9 @@
 ---
 layout: default
+title: "Calgary Real Estate Trends: Pricing, Sales, and Market Insights"
+date: 2025-02-16
+author: Aaron Gelfand
 ---
-
-Text can be **bold**, _italic_, or ~~strikethrough~~.
-
-[Link to another page](./another-page.html).
-
-[Link to real estate data](./real_estate_cleaning/).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Calgary Real Estate Trends: Pricing, Sales, and Market Insights
 
 Thinking of buying a home in Calgary? For many young professionals and recent graduates, homeownership represents a key financial milestone. However, navigating the real estate market in a large city like Calgary, requires understanding pricing trends, market competitiveness, and property value over time. Rising home prices, fluctuating mortgage rates, and shifting buyer demand all play a role in shaping housing affordability.
 
@@ -125,11 +116,13 @@ Real estate performance can vary greatly depending on the location within the ci
 
 <iframe src="/assets/calgary_real_estate_heatmap_plasma.html" width="100%" height="600"></iframe>
 
-TEXT
+In this interactive map, we can see the exact sales price for each house, and its address.  However, due to the sheer amount of points, it is difficult to fully draw any meaningful conclusions about neighbourhood performance.  We therefore decided to create another map that look at the average Sold/List Ratios based on which neighbourhood a house was in.
 
 <iframe src="/assets/calgary_property_desirability.html" width="100%" height="600"></iframe>
 
-By merging the real estate data with geographical coordinates, we created an interactive map to visualize how different neighborhoods in Calgary perform in terms of sales prices and market dynamics. This map provides a spatial understanding of the real estate landscape, showing areas with higher and lower performance.
+From this map, we get a better idea of neighbourhoods that are more and less competitive.  We see that the more competitive neighbourhoods include Britannia, Coach Hill, and Wolf Willow, while the less competitive neighbourhoods include Upper North Haven, Rideau Park, Sunalta West, Bel-Aire, and 12B (an outer district of the city).
+
+While this map may be an indicator neighbourhood competitiveness, it is not indicative of affordability.  For example, Bel-Aire appears to be a less competitive neighbourhood as the average Sold/List Ratio is lower, but if you look at the prices of the houses being sold in that neighbourhood, they are in the multimillions, making it less accessible to many buyers, despite its lower competitiveness.
 
 ## Can we train a classification model to predict whether a house is selling at a more competitive rate?
 
@@ -157,110 +150,31 @@ To predict the Sold/List Ratio of a house, we trained a linear regression model.
 
 Our linear regression model achieved an <strong>R<sup>2</sup> score of 0.461</strong>, indicating that approximately <strong>46% of the variance</strong> in the Sold/List Ratio can be explained by the model's features. The model's <strong>Mean Squared Error (MSE) of 0.001</strong> and <strong>Root Mean Squared Error (RMSE) of 0.022</strong> suggest that the predictions are relatively accurate, but there is still room for improvement. The scatter plot of predicted versus actual Sold/List Ratios shows that the model is reasonably good at predicting the sold/list ratio, with some deviations indicating that other factors not included in the model may also influence the final sale-to-list price ratio.
 
+### Future Steps
 
+Below we have included some potential future actions that may be interesting to explore:
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+- Encorporating a time series analysis, to get better insight as to how home prices change over time.  We could focus on longer-term trends such as fluctuating mortgage rates.  We could also implement predictive models to help forecast the real estate markets competitiveness over the coming months.
+- Integrating more external data sources, such as demogrpahic data, to get a better idea of population growth, age distribution, or employment statistics.
+- Enhancing our geospatial analysis by using clustering techniques to group similar neighbourhoods based on real estate performance.
 
-### Header 3
+### Conclusion
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+Our analysis of Calgary's real estate market reveals a few key insights that can guide buyers, sellers, and investors in making informed decisions. Home size plays a significant role in determining final sale prices, with a strong positive correlation (0.81) between square footage and selling price. However, property type also matters, with houses tending to have the highest average price per square foot, while fourplexes have the lowest (though data availability for fourplexes is limited).
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+Market competitiveness, as measured by the Sold/List Ratio, varies across neighborhoods and property types. Neighbourhoods such as Britannia, Coach Hill, and Wolf Willow see homes consistently selling above the listing price, signaling strong demand, while neighbourhoods such as Upper North Haven, Rideau Park, Sunalta West, Bel-Aire, and 12B favor buyers with below-list sales. Seasonal trends also influence pricing, with the warmer months of the year being more competitive than others.
 
-#### Header 4
+By integrating geospatial data, we provided a more granular view of market trends across different Calgary neighborhoods. This spatial component adds depth to our analysis, helping potential buyers and investors target locations that align with their budget and market expectations.
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+Looking ahead, further refinements such as incorporating economic indicators, mortgage rates, or demographic trends, could enhance predictive models for real estate trends. Our classification and regression models lay a foundation for understanding market competitiveness and pricing behavior, but continuous updates and feature engineering could improve their accuracy.
 
-##### Header 5
+Ultimately, Calgary’s real estate market remains dynamic, influenced by a range of economic and seasonal factors. Staying informed about these trends is crucial for anyone looking to navigate the complexities of buying or selling property in this evolving landscape.
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+### References
 
-###### Header 6
+Bōde Canada. (n.d.). Sold data in Calgary. Retrieved February 3, 2025, from https://bode.ca/sold-data?province=AB&city=Calgary&transactionDate=2%20years
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+City of Calgary. (n.d.). Community boundaries [Data set]. Retrieved February 3, 2025, from https://data.calgary.ca/Base-Maps/Community-Boundaries/ab7m-fwn6
 
-### There's a horizontal rule below this.
+City of Calgary. (n.d.). Parcel address and lat/long [Data set]. Retrieved February 3, 2025, from https://data.calgary.ca/Base-Maps/Parcel-Address-and-lat-long/s8b3-j88p/about_data
 
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
