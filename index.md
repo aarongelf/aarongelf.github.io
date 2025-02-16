@@ -147,7 +147,7 @@ From the logistic regression model, we achieved an <b>accuracy of 96.3%</b>, wit
 
 The confusion matrix further shows that the model classifies competitive houses correctly, though some non-competitive houses are occasionally misclassified. Overall, the logistic regression model is effective at predicting the competitiveness of the real estate market based on the features provided.
 
-## Can we train a regression model to predict the `Sold/List Ratio` of a house?
+## Can we train a regression model to predict the Sold/List Ratio of a house?
 
 To predict the Sold/List Ratio of a house, we trained a linear regression model. This regression model aims to estimate how much over (or under) the list price a property is likely to sell, based on factors like price per square foot, square footage, number of bedrooms, bathrooms, and the neighborhood. This analysis can help sellers better understand how their house might perform relative to the asking price and guide buyers in assessing potential deals.
 
@@ -155,7 +155,7 @@ To predict the Sold/List Ratio of a house, we trained a linear regression model.
   <img src="/assets/images/regression_actual_vs_predicted.png"> 
 </p>
 
-Our linear regression model achieved an <b>R<sup>2</sup> score of 0.461</b>, indicating that approximately <b>46% of the variance</b> in the Sold/List Ratio can be explained by the model's features. The model's <b>Mean Squared Error (MSE) of 0.001 and Root Mean Squared Error (RMSE) of 0.022</b> suggest that the predictions are relatively accurate, but there is still room for improvement. The scatter plot of predicted versus actual Sold/List Ratios shows that the model is reasonably good at predicting the sold/list ratio, with some deviations indicating that other factors not included in the model may also influence the final sale-to-list price ratio.
+Our linear regression model achieved an <strong>R<sup>2</sup> score of 0.461</strong>, indicating that approximately <b>46% of the variance</b> in the Sold/List Ratio can be explained by the model's features. The model's <b>Mean Squared Error (MSE) of 0.001 and Root Mean Squared Error (RMSE) of 0.022</b> suggest that the predictions are relatively accurate, but there is still room for improvement. The scatter plot of predicted versus actual Sold/List Ratios shows that the model is reasonably good at predicting the sold/list ratio, with some deviations indicating that other factors not included in the model may also influence the final sale-to-list price ratio.
 
 
 
