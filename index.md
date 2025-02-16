@@ -22,7 +22,7 @@ Key guiding questions include:
 
 ## Our Dataset
 
-Our main data was initially scraped from [Bōde Canada Inc](https://bode.ca/sold-data?province=AB&city=Calgary&transactionDate=2%20years), an online real estate platform, with real estate data ranging from August 2024, to March 2025. To determine specific neighborhood information and coordinate data, we merged our data with datasets from Open Calgary that provided information on [Calgary neighborhoods](https://data.calgary.ca/Base-Maps/Community-Boundaries/ab7m-fwn6) and [Calgary coordinates](https://data.calgary.ca/Base-Maps/Parcel-Address-and-lat-long/s8b3-j88p/about_data).
+Our main data was initially scraped from [B&#x014D;de Canada Inc](https://bode.ca/sold-data?province=AB&city=Calgary&transactionDate=2%20years), an online real estate platform, with real estate data ranging from August 2024, to March 2025. To determine specific neighborhood information and coordinate data, we merged our data with datasets from Open Calgary that provided information on [Calgary neighborhoods](https://data.calgary.ca/Base-Maps/Community-Boundaries/ab7m-fwn6) and [Calgary coordinates](https://data.calgary.ca/Base-Maps/Parcel-Address-and-lat-long/s8b3-j88p/about_data).
 
 Our initial dataset contained the following key attributes:
 
@@ -173,7 +173,7 @@ Ultimately, Calgary’s real estate market remains dynamic, influenced by a rang
 
 ### References
 
-Bōde Canada. (n.d.). Sold data in Calgary. Retrieved February 3, 2025, from https://bode.ca/sold-data?province=AB&city=Calgary&transactionDate=2%20years
+B&#x014D;de Canada. (n.d.). Sold data in Calgary. Retrieved February 3, 2025, from https://bode.ca/sold-data?province=AB&city=Calgary&transactionDate=2%20years
 
 City of Calgary. (n.d.). Community boundaries [Data set]. Retrieved February 3, 2025, from https://data.calgary.ca/Base-Maps/Community-Boundaries/ab7m-fwn6
 
