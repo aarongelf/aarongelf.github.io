@@ -1,9 +1,11 @@
 ---
-layout: default
+layout: post
 title: "Calgary Real Estate Trends: Pricing, Sales, and Market Insights"
 date: 2025-02-16
 author: Aaron Gelfand
 ---
+
+# Calgary Real Estate Trends: Pricing, Sales, and Market Insights
 
 Thinking of buying a home in Calgary? For many young professionals and recent graduates, homeownership represents a key financial milestone. However, navigating the real estate market in a large city like Calgary, requires understanding pricing trends, market competitiveness, and property value over time. Rising home prices, fluctuating mortgage rates, and shifting buyer demand all play a role in shaping housing affordability.
 
