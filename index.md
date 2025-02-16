@@ -95,7 +95,7 @@ Different types of properties tend to have different price dynamics. For example
   <img src="/assets/images/avg_price_per_sqft.png">
 </p>
 
-From our bar plot we can see that the average price per square foot is highest for houses (<em> mean = 483.81, std = 143.08</em>), while lowest for fourplexes (<em> mean = 292.13</em>).  That being said, we can see there is no error bar for the fourplexes, and upon inspection we can see that there is only one property sold that was a fourplex, making it impossible to calculate the standard deviation.
+From our bar plot we can see that the average price per square foot is highest for houses (<strong>mean = 483.81, std = 143.08</strong>), while lowest for fourplexes (<strong> mean = 292.13</strong>).  That being said, we can see there is no error bar for the fourplexes, and upon inspection we can see that there is only one property sold that was a fourplex, making it impossible to calculate the standard deviation.
 
 ## Are homes in Calgary selling above or below the listing price?
 
@@ -105,7 +105,7 @@ Understanding whether properties are generally selling above or below the listin
   <img src="/assets/images/distribution_of_sold_list_ratio.png">
 </p>
 
-From the histrogram above, we can see that the distribution of the Sold/List Ratio lies slightly to the left of the break-even line (<em>mean Sold/List Ratio = 0.986</em>).  This distribution reveals that most properties are sold slightly below the listing price, indicating a less competitive market, where buyers are less willing to pay more than the listing price.
+From the histrogram above, we can see that the distribution of the Sold/List Ratio lies slightly to the left of the break-even line (<strong>mean Sold/List Ratio = 0.986</strong>).  This distribution reveals that most properties are sold slightly below the listing price, indicating a less competitive market, where buyers are less willing to pay more than the listing price.
 
 ## What time of year sees the highest sale-to-list price ratios?
 
@@ -117,7 +117,7 @@ The real estate market is often influenced by seasonal trends. For instance, the
 
 Our line plot shows the monthly average Sold/List Ratios, highlighting seasonal trends in property sales. We observed that properties were more likely to have a higher sold/list ratio in the warmer months, making a steady decline during the colder months, and increasing again once the months began to warm up.  
 
-Additionally, we calculated the correlation between months and sold/list ratio to be <strong>-0.13</strong>, indicating a weak negative correlation.  This implies that while there is a trend of properties being more likely to sell closer to or below the listing price during the colder months, the relationship is not strong enough to fully explain the behavior of the market across months.
+Additionally, we calculated the correlation between months and <strong>sold/list ratio to be -0.13</strong>, indicating a weak negative correlation.  This implies that while there is a trend of properties being more likely to sell closer to or below the listing price during the colder months, the relationship is not strong enough to fully explain the behavior of the market across months.
 
 ## What neighborhoods have the most competitive real estate markets?
 
@@ -155,7 +155,7 @@ To predict the Sold/List Ratio of a house, we trained a linear regression model.
   <img src="/assets/images/regression_actual_vs_predicted.png"> 
 </p>
 
-Our linear regression model achieved an <strong>R<sup>2</sup> score of 0.461</strong>, indicating that approximately <strong>46% of the variance</strong> in the Sold/List Ratio can be explained by the model's features. The model's <strong>Mean Squared Error (MSE) of 0.001 and Root Mean Squared Error (RMSE) of 0.022</strong> suggest that the predictions are relatively accurate, but there is still room for improvement. The scatter plot of predicted versus actual Sold/List Ratios shows that the model is reasonably good at predicting the sold/list ratio, with some deviations indicating that other factors not included in the model may also influence the final sale-to-list price ratio.
+Our linear regression model achieved an <strong>R<sup>2</sup> score of 0.461</strong>, indicating that approximately <strong>46% of the variance</strong> in the Sold/List Ratio can be explained by the model's features. The model's <strong>Mean Squared Error (MSE) of 0.001</strong> and <strong>Root Mean Squared Error (RMSE) of 0.022</strong> suggest that the predictions are relatively accurate, but there is still room for improvement. The scatter plot of predicted versus actual Sold/List Ratios shows that the model is reasonably good at predicting the sold/list ratio, with some deviations indicating that other factors not included in the model may also influence the final sale-to-list price ratio.
 
 
 
